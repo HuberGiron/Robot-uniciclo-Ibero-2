@@ -245,7 +245,8 @@ if __name__=="__main__":
 
           if visual==True:
             draw_aruco(frame, topLeft, topRight, bottomLeft, bottomRight, MidP, X, Y, angle, markerID, 1280, 720)
-  
+
+          print("ID:"+str(markerID)+",X:"+str()+",Y:"+str(Y)+"Th:"+str(angle))
     if visual ==True:
       cv2.imshow(window_name, frame) #Despliega la ventana 
 
