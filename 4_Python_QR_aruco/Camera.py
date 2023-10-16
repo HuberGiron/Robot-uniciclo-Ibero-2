@@ -216,6 +216,8 @@ if __name__=="__main__":
 
   while (True):
     ret, frame = capture.read()
+    resolucionx=1280
+    resoluciony=720
     if ret == False:
       break  #Por si acaso no detecta nada
 
@@ -244,9 +246,9 @@ if __name__=="__main__":
           angle = get_angle(bottomRight, bottomLeft)
 
           if visual==True:
-            draw_aruco(frame, topLeft, topRight, bottomLeft, bottomRight, MidP, X, Y, angle, markerID, 1280, 720)
+            draw_aruco(frame, topLeft, topRight, bottomLeft, bottomRight, MidP, X, Y, angle, markerID, resolucionx, resoluciony)
 
-          print("ID:"+str(markerID)+",X:"+str()+",Y:"+str(Y)+"Th:"+str(angle))
+          print("ID:"+str(markerID)+", X:"+str(MidP[0][0]-(resolucionx/2))+", Y:"+str(MidP[0][1]-(resoluciony/2))+", Th:"+str(angle))
     if visual ==True:
       cv2.imshow(window_name, frame) #Despliega la ventana 
 
