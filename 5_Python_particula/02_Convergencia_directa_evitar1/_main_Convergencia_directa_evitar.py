@@ -18,7 +18,7 @@ xs=5 #valor esperado de x
 ys=5 #valor y deseado
 k=0.01 #ganancia del control
 
-xr=3 #valor repulsivo xr1
+xr=2 #valor repulsivo xr1
 yr=3 #valor repulsivo yr1
 
 for i in range(0,tfin):
