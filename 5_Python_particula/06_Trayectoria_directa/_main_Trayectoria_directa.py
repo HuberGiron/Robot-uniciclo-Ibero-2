@@ -11,8 +11,8 @@ tfin=600
 
 #INICIALIZACION DE VARIABLES
 x,y,t,ex,ey,mcirc_x,mcirc_y =aux.inicializar_arreglos(tfin)
-x[0]=0 #Valor inicial x
-y[0]=0 #Valor inicial y
+x[0]=1 #Valor inicial x
+y[0]=1 #Valor inicial y
 
 #VALORES CONTROL
 k=0.1 #ganancia del control

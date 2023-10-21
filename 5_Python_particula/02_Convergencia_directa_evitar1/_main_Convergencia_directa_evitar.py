@@ -6,7 +6,7 @@ import funciones_auxiliares as aux
 import control_robot as robot
 
 #ITERACIONES DE SIMULACION
-tfin=600
+tfin=1000
 
 #INICIALIZACION DE VARIABLES
 x,y,t,ex,ey =aux.inicializar_arreglos(tfin)
@@ -18,7 +18,7 @@ xs=5 #valor esperado de x
 ys=5 #valor y deseado
 k=0.01 #ganancia del control
 
-xr=2 #valor repulsivo xr1
+xr=2.5 #valor repulsivo xr1
 yr=3 #valor repulsivo yr1
 
 for i in range(0,tfin):
