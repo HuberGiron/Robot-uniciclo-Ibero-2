@@ -38,6 +38,7 @@ print("Robot 1 OK")
 # print("Robot 3 OK")
 
 robot_bt=robot1
+robot_id=1 #ID del QR a detectar
 robot=[[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]
 
 #INICIALIZACION DE VALORES ROBOT FISICO 1
@@ -78,9 +79,9 @@ while (True):
 
         #------LEY DE CONTROL CONVERGENCIA------
 
-        x=robot[1][0]-(resolucionx/2) #Obtenemos valor X de QR robot 
-        y=robot[1][1]-(resoluciony/2) #Obtenemos valor Y de QR robot 
-        th=robot[1][2] #Obtenemos valor Th de robot 
+        x=robot[robot_id][0]-(resolucionx/2) #Obtenemos valor X de QR robot 
+        y=robot[robot_id][1]-(resoluciony/2) #Obtenemos valor Y de QR robot 
+        th=robot[robot_id][2] #Obtenemos valor Th de robot 
 
         x=x+(l*np.cos(th))
         y=y+(l*np.sin(th))
